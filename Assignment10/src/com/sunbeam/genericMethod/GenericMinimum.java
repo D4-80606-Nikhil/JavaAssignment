@@ -16,6 +16,7 @@ public class GenericMinimum <W extends Number>{
 	
 	
 	public static <T extends Number> void minimumNumber(T[] arr) {
+		if(arr.length >0) {
         T min = arr[0];
 //		System.out.println(min);
 		
@@ -24,14 +25,16 @@ public class GenericMinimum <W extends Number>{
 				min = ele;
 			}
 		}
-		System.out.println(min);
+		System.out.println(min);}else {
+			System.out.println("Array is Empty");
+		}
 	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Integer arr[] = {1,2,3,4,5,6};
 		minimumNumber(arr);
-		Double arr1[] = {5.5,3.3,5.4,1.2,0.9};
+		Double arr1[] = {};
 		minimumNumber(arr1);
 
 	}

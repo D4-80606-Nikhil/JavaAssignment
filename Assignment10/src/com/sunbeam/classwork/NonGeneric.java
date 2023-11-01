@@ -136,6 +136,8 @@ class Box<T extends Displayable>  {
 }
 
 public class NonGeneric {
+	
+	
    public static void main(String[] args) {
 	   Box<Person> b1 = new Box<>();
 	   b1.getValue(new Person("Nikhil",22));
