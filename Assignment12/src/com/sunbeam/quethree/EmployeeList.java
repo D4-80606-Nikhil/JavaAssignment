@@ -1,7 +1,7 @@
 package com.sunbeam.quethree;
 import java.util.*;
 
-public class EmployeeList {
+public class EmployeeList implements Comparable<EmployeeList>{
   private int id;
   private String name;
   private int age;
@@ -97,5 +97,11 @@ public void display(){
 		return "Employee Name"+this.name+"\nEmployee ID : "+this.id+"\nEmployee Age : "
 				+this.age+"\nEmployee Salary:"+this.salary;
 	}
+
+@Override
+public int compareTo(EmployeeList arg0) {
+	// TODO Auto-generated method stub
+	return -Double.compare(this.salary, arg0.getSalary());
+}
  
 }
