@@ -1,4 +1,5 @@
 package com.sunbeam.quetwo;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Book{
@@ -81,7 +82,7 @@ public void display() {
 @Override
 	public int hashCode() {
 		// TODO Auto-generated method stub
-		return Object.hash(this.isbn);
+		return Objects.hash(this.isbn);
 	}
 
 @Override

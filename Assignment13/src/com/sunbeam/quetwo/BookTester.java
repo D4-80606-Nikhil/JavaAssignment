@@ -13,8 +13,8 @@ public class BookTester {
         Collections.addAll(book, new Book("1A2B#Z",250,"Ajit Doval",5),
         		new Book("1A2B#Z",250,"Ajit Doval",5),
         		new Book("1A2B#Z",250,"Ajit Doval",5),
-        		new Book("1A2B#Z",250,"Ajit Doval",5),
-        		new Book("1A2B#Z",250,"Ajit Doval",5));
+        		new Book("1A2B#Z",250,"Ajit Doval",6),
+        		new Book("1A2B#Z",250,"Ajit Doval",6));
         
         Iterator<Book> itr = book.iterator();
         while(itr.hasNext()) {
