@@ -1,8 +1,8 @@
 package com.sunbeam.quetwo;
-import java.util.Objects;
+import java.io.Serializable;
 import java.util.Scanner;
 
-public class Book implements Comparable{
+public class Book implements Serializable{
    private String isbn;
    private double price;
    private String authorName;
@@ -72,18 +72,12 @@ public String toString() {
 	return "Book [isbn=" + isbn + ", price=" + price + ", authorName=" + authorName + ", quantity=" + quantity + "]";
 }
 
-public void display() {null
+public void display() {
 	System.out.println("ISBN : "+this.isbn);
 	System.out.println("Author Name : "+this.authorName);
 	System.out.println("Price : "+this.price);
 	System.out.println("Quantity : "+this.quantity);
 }
-
-@Override
-	public int hashCode() {
-		// TODO Auto-generated method stub
-		return Objects.hash(this.isbn);
-	}
 
 @Override
 	public boolean equals(Object obj) {
@@ -103,13 +97,6 @@ public void display() {null
 	    }
 		return false;
 	}
-
-@Override
-public int compareTo(Object arg0) {
-	// TODO Auto-generated method stub
-	Book book = (Book)arg0;
-	return Double.compare(this.quantity, book.getQuantity());
-}
 
 }
    
