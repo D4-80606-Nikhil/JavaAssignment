@@ -1,8 +1,8 @@
-package com.sunbeam.quetwo;
+package com.sunbeam.queFive;
 import java.util.Objects;
 import java.util.Scanner;
 
-public class Book implements Comparable<Book>{
+public class Book implements Comparable{
    private String isbn;
    private double price;
    private String authorName;
@@ -105,10 +105,10 @@ public void display() {
 	}
 
 @Override
-public int compareTo(Book arg0) {
+public int compareTo(Object arg0) {
 	// TODO Auto-generated method stub
-//	Book book = (Book)arg0;
-	return Double.compare(this.quantity, arg0.getQuantity());
+	Book book = (Book)arg0;
+	return Double.compare(this.quantity, book.getQuantity());
 }
 
 }
